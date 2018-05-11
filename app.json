@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/join/join"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0094ff",
+    "backgroundColor": "#ededed",
+    "navigationBarTitleText": "Wistron",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#0094ff",
+    "backgroundColor": "#F0F8FF",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./img/home_default.png",
+        "selectedIconPath": "./img/home_selected.png"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "text": "加入我们",
+        "iconPath": "./img/join_default.png",
+        "selectedIconPath": "./img/join_selected.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
