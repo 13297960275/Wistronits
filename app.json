@@ -1,32 +1,55 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/join/join"
+    "pages/services/services",
+    "pages/solutions/solutions",
+    "pages/applications/applications",
+    "pages/industries/industries",
+    "pages/test/test",
+    "pages/tabCard/tabCard"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#0094ff",
-    "backgroundColor": "#ededed",
-    "navigationBarTitleText": "Wistron",
+    "navigationBarBackgroundColor": "#258bce",
+    "backgroundColor": "#258bce",
+    "navigationBarTitleText": "Wistron ITS",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#aaa",
-    "selectedColor": "#0094ff",
+    "selectedColor": "#258bce",
     "backgroundColor": "#F0F8FF",
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "./img/home_default.png",
-        "selectedIconPath": "./img/home_selected.png"
+        "iconPath": "./img/icon/default/home.png",
+        "selectedIconPath": "./img/icon/selected/home.png"
       },
       {
-        "pagePath": "pages/join/join",
-        "text": "加入我们",
-        "iconPath": "./img/join_default.png",
-        "selectedIconPath": "./img/join_selected.png"
+        "pagePath": "pages/services/services",
+        "text": "服务",
+        "iconPath": "./img/icon/default/services.png",
+        "selectedIconPath": "./img/icon/selected/services.png"
+      },
+      {
+        "pagePath": "pages/solutions/solutions",
+        "text": "解决方案",
+        "iconPath": "./img/icon/default/solutions.png",
+        "selectedIconPath": "./img/icon/selected/solutions.png"
+      },
+      {
+        "pagePath": "pages/applications/applications",
+        "text": "应用",
+        "iconPath": "./img/icon/default/applications.png",
+        "selectedIconPath": "./img/icon/selected/applications.png"
+      },
+      {
+        "pagePath": "pages/industries/industries",
+        "text": "行业",
+        "iconPath": "./img/icon/default/industries.png",
+        "selectedIconPath": "./img/icon/selected/industries.png"
       }
     ],
     "position": "bottom"

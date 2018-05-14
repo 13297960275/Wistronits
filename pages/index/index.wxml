@@ -1,18 +1,15 @@
 <!--index.wxml-->
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" class="swiper" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image" width="100%" height="100%" />
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" class="swiper" interval="{{interval}}" bindchange="listenSwiper" duration="{{duration}}">
+  <block wx:for="{{swiperDatas}}">
+    <swiper-item class="slide">
+        <text class="slide-intro">{{item.intro}}</text>
+        <image src="{{item.url}}" class="slide-image" width="100%" height="100%" />
     </swiper-item>
   </block>
 </swiper>
+<!-- sample.wxml -->
+<view class="btn-area">
+  <navigator url="/pages/test/test" hover-class="navigator-hover">跳转到新页面</navigator>
 
-<view class="list">
-  <view class="item">
-    <image src='' class='img'></image>
-    <view class='text'>
-      <text class='title'>服务说明</text>
-      <text class="intro">\n纬创软件的业务流程外包服务(BPO)，是协助客户处理其营运流程中的某个环节，以降低客户营运成本、提高服务质量。服务范围包括数据输入与校正、财务人事作业、会员入会申办与会员服务、客服中心、数据中心等。</text>
-    </view>
-  </view>
+  <navigator url="/pages/solutions/solutions" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
 </view>

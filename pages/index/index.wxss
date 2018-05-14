@@ -1,36 +1,35 @@
 /**index.wxss**/
+.slide {
+  position: static;
+}
+
+.slide-intro {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  font-size: 1.1rem;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .slide-image {
+  position: relative;
+  top: 0%;
   width: 100%;
   height: 100%;
 }
 
-.list {
-  width: 100%;
+/** 修改默认的navigator点击态 **/
+
+.navigator-hover {
+  color: blue;
 }
 
-.item {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-}
+/** 自定义其他点击态样式类 **/
 
-.img {
-  justify-content: center;
-  width: 30%;
-  margin: 2px;
-}
-
-.text {
-  width: 70%;
-  margin: 2px;
-  align-items:stretch;
-}
-
-.title {
-  font-size: 0.9rem;
-  color: #0094ff;
-}
-
-.intro {
-  font-size: 0.75rem;
+.other-navigator-hover {
+  color: red;
 }

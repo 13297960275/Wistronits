@@ -1,0 +1,8 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-index="{{index}}" class="item {{currentIndex==index?'active':''}}" bindtap="navbarTab" wx:key="unique">{{item}}  
+  </text>
+</view>
+<view class='detail'>
+  <view hidden="{{currentIndex!==0}}">first</view>
+  <view hidden="{{currentIndex!==1}}">second</view>
+</view>
