@@ -44,7 +44,8 @@
 				{
 					"id": -1,
 					"name": "tabCard",
-					"pathName": "pages/tabCard/tabCard"
+					"pathName": "pages/tabCard/tabCard",
+					"query": ""
 				}
 			]
 		}
