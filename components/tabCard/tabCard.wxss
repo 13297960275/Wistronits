@@ -48,21 +48,21 @@
   display: flex;
   width: 100%;
   flex-direction: column;
-  line-height: 80rpx;
   /* position: fixed;  *//* top: 0;  */
 }
 
 .navbar .item {
   flex: auto;
+  line-height: 1.8rem;
   font-size: 0.9rem;
   /* text-align: center;  */
-  background: #fff;
+  background: #eef4ff;
   font-weight: bold;
 }
 
 .navbar .item.active {
-  color: #258bce;
-  background: #dfeaff;
+  color: #fff;
+  background: #00698f;
   /* position: relative;  */
 }
 
@@ -93,6 +93,11 @@
 
 .img {
   width: 100%;
+  margin: 1rem 0 0 0;
+}
+
+.width150p {
+  width: 150%;
 }
 
 .height100 {
@@ -114,6 +119,7 @@
   display: flex;
   border: 1px solid #fff;
   align-items: center;
+  margin-bottom: 5px;
 }
 
 /*奇数行*/

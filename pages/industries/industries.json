@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "tabCard": "/components/tabCard/tabCard"
+  }
+}

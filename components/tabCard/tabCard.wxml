@@ -5,26 +5,26 @@
   </view>
 </view>
 <view wx:for="{{swiperTabDatas}}" wx:for-item="item" wx:for-index="index">
-  <view class='waterfall segment fsize9p' hidden="{{currentIndex!==item.id}}">
+  <view class='waterfall segment' hidden="{{currentIndex!==item.id}}">
     <view class='title'>
-      <text class='bold fsize9p margin2p'>{{item.title}}</text>
+      <text class='bold margin2p'>{{item.title}}</text>
     </view>
-    <view class='subs fsize8p margin2p' wx:for="{{item.subs}}" wx:for-item="sub" wx:for-index="j">
+    <view class='subs margin2p' wx:for="{{item.subs}}" wx:for-item="sub" wx:for-index="j">
       <view class='subtitle bold'>{{sub.subtitle}}</view>
-      <view class='fsize7p margin2p' wx:for="{{sub.intro}}" wx:for-item="intro" wx:for-index="k">
+      <view class='margin2p' wx:for="{{sub.intro}}" wx:for-item="intro" wx:for-index="k">
         <view class='intro' hidden="{{item.display!=='w'}}">
           <view class='head bold'>{{intro.head}}</view>
-          <view class='content'>{{intro.content}}</view>
+          <rich-text class='content' nodes="{{intro.content}}"></rich-text>
           <image class='img height100' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
         </view>
         <view class='time-line' hidden="{{item.display!=='t'}}">
           <view class="time-line-head fsize8p">{{intro.head}}</view>
-          <view class="time-line-content">{{intro.content}}</view>
+          <view class="time-line-content fsize8p">{{intro.content}}</view>
         </view>
         <view class='personintro intro' hidden="{{item.display!=='p'}}">
           <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
-          <view class="head fsize8p">{{intro.head}}</view>
-          <view class="head fsize7p">{{intro.postion}}</view>
+          <view class="head bold">{{intro.head}}</view>
+          <view class="head bold fsize9p">{{intro.postion}}</view>
           <view class="content">{{intro.content}}</view>
         </view>
         <view class='image' hidden="{{item.display!=='i'}}">

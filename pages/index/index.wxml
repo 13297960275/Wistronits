@@ -8,7 +8,7 @@
   </block>
 </swiper>
 
-<tabCard id="tabCard" swiperTabDatas="{{swiperTabDatas}}" currentIndex="{{currentIndex}}"></tabCard>
+<tabCard id="tabCard" swiperTabDatas="{{swiperTabDatas}}"></tabCard>
 
 <!-- <view class="container">
     <dialog id='dialog' 

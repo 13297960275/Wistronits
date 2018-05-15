@@ -1,2 +1,2 @@
 <!--pages/industries/industries.wxml-->
-<text>pages/industries/industries.wxml</text>
+<tabCard id="tabCard" swiperTabDatas="{{swiperTabDatas}}"></tabCard>

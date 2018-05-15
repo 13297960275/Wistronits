@@ -1,2 +1,4 @@
 <!--pages/applications/applications.wxml-->
-<text>pages/applications/applications.wxml</text>
+<view>
+<tabCard id="tabCard" swiperTabDatas="{{swiperTabDatas}}"></tabCard>
+</view>
