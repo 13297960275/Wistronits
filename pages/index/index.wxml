@@ -7,9 +7,18 @@
     </swiper-item>
   </block>
 </swiper>
-<!-- sample.wxml -->
-<view class="btn-area">
-  <navigator url="/pages/test/test" hover-class="navigator-hover">跳转到新页面</navigator>
 
-  <navigator url="/pages/solutions/solutions" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
-</view>
+<tabCard id="tabCard" swiperTabDatas="{{swiperTabDatas}}" currentIndex="{{currentIndex}}"></tabCard>
+
+<!-- <view class="container">
+    <dialog id='dialog' 
+      title='我是标题' 
+      content='恭喜你，学会了小程序组件' 
+      cancelText='知道了' 
+      confirm='谢谢你'
+      bind:cancelEvent="_cancelEvent"  
+      bind:confirmEvent="_confirmEvent">
+    </dialog>
+    
+    <button type="primary" bindtap="showDialog"> ClickMe! </button>
+</view> -->

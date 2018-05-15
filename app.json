@@ -5,8 +5,8 @@
     "pages/solutions/solutions",
     "pages/applications/applications",
     "pages/industries/industries",
-    "pages/test/test",
-    "pages/tabCard/tabCard"
+    "components/tabCard/tabCard",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -58,5 +58,5 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": false
 }

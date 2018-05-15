@@ -1,0 +1,40 @@
+<!--components/tabCard/tabCard.wxml-->
+<view class="navbar segment">
+  <view wx:for="{{swiperTabDatas}}" data-index="{{index}}" class="item {{currentIndex==item.id?'active':''}}" bindtap="navbarTab" wx:key="unique">
+    <text class='margin1'>{{item.title}}</text>
+  </view>
+</view>
+<view wx:for="{{swiperTabDatas}}" wx:for-item="item" wx:for-index="index">
+  <view class='waterfall segment fsize9p' hidden="{{currentIndex!==item.id}}">
+    <view class='title'>
+      <text class='bold fsize9p margin2p'>{{item.title}}</text>
+    </view>
+    <view class='subs fsize8p margin2p' wx:for="{{item.subs}}" wx:for-item="sub" wx:for-index="j">
+      <view class='subtitle bold'>{{sub.subtitle}}</view>
+      <view class='fsize7p margin2p' wx:for="{{sub.intro}}" wx:for-item="intro" wx:for-index="k">
+        <view class='intro' hidden="{{item.display!=='w'}}">
+          <view class='head bold'>{{intro.head}}</view>
+          <view class='content'>{{intro.content}}</view>
+          <image class='img height100' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
+        </view>
+        <view class='time-line' hidden="{{item.display!=='t'}}">
+          <view class="time-line-head fsize8p">{{intro.head}}</view>
+          <view class="time-line-content">{{intro.content}}</view>
+        </view>
+        <view class='personintro intro' hidden="{{item.display!=='p'}}">
+          <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
+          <view class="head fsize8p">{{intro.head}}</view>
+          <view class="head fsize7p">{{intro.postion}}</view>
+          <view class="content">{{intro.content}}</view>
+        </view>
+        <view class='image' hidden="{{item.display!=='i'}}">
+          <view class="head bold">{{intro.head}}</view>
+          <view class="content">{{intro.content}}</view>
+          <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
+        </view>
+      </view>
+      <image class='img' mode='aspectFit' wx:if="{{sub.img}}" src="/wistronits/{{sub.img}}"></image>
+    </view>
+    <image class='img' mode='aspectFit' wx:if="{{item.img}}" src="/wistronits/{{item.img}}"></image>
+  </view>
+</view>

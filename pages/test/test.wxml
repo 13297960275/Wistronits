@@ -57,3 +57,11 @@
     </view>
   </view>
 </view>
+
+<view class="demo4-2">
+    <image class="col-left"></image>
+    <view class="col-middle">
+        <view>大标题</view>
+        <text>小标题</text>
+    </view>
+</view>

@@ -1,0 +1,24 @@
+<!-- <template name="tabCard"> -->
+  <view class="navbar">
+    <view wx:for="{{swiperTabDatas}}" data-index="{{index}}" class="item {{currentIndex==item.id?'active':''}}" bindtap="navbarTab" wx:key="unique">
+      <text class='margin1'>{{item.title}}</text>
+    </view>
+  </view>
+  <view wx:for="{{swiperTabDatas}}" wx:for-item="item" wx:for-index="index">
+    <view class='detail' hidden="{{currentIndex!==item.id}}">
+      <view class='title'>
+        <text class='fsize9p bold margin2p'>{{item.title}}</text>
+      </view>
+      <view class='subs fsizep margin2p' wx:for="{{item.subs}}" wx:for-item="sub" wx:for-index="j">
+        <view class='subtitle bold'>{{sub.subtitle}}</view>
+        <view class='intro margin2p' wx:for="{{sub.intro}}" wx:for-item="intro" wx:for-index="k">
+          <view class='head bold fsize8p'>{{intro.head}}</view>
+          <view class='content fsize8p'>{{intro.content}}</view>
+          <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
+        </view>
+        <image class='img' mode='aspectFit' wx:if="{{sub.img}}" src="/wistronits/{{sub.img}}"></image>
+      </view>
+      <image class='img' mode='aspectFit' wx:if="{{item.img}}" src="/wistronits/{{item.img}}"></image>
+    </view>
+  </view>
+<!-- </template> -->
