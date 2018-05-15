@@ -14,18 +14,20 @@
       <view class='margin2p' wx:for="{{sub.intro}}" wx:for-item="intro" wx:for-index="k">
         <view class='intro' hidden="{{item.display!=='w'}}">
           <view class='head bold'>{{intro.head}}</view>
-          <rich-text class='content' nodes="{{intro.content}}"></rich-text>
+          <view wx:for="{{intro.content}}" wx:for-item="c" wx:for-index="s">
+            <rich-text class='content' nodes="{{c}}"></rich-text>
+          </view>
           <image class='img height100' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
         </view>
         <view class='time-line' hidden="{{item.display!=='t'}}">
-          <view class="time-line-head fsize8p">{{intro.head}}</view>
-          <view class="time-line-content fsize8p">{{intro.content}}</view>
+          <view class="time-line-head fsize8p ">{{intro.head}}</view>
+          <view class="time-line-content fsize8p ">{{intro.content}}</view>
         </view>
         <view class='personintro intro' hidden="{{item.display!=='p'}}">
           <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
-          <view class="head bold">{{intro.head}}</view>
-          <view class="head bold fsize9p">{{intro.postion}}</view>
-          <view class="content">{{intro.content}}</view>
+          <view class="head bold ">{{intro.head}}</view>
+          <view class="head bold fsize9p ">{{intro.postion}}</view>
+          <view class="content ">{{intro.content}}</view>
         </view>
         <view class='image' hidden="{{item.display!=='i'}}">
           <view class="head bold">{{intro.head}}</view>
