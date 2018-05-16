@@ -30,21 +30,21 @@ Component({
    */
   methods: {
     navbarTab: function (e) {
-      console.log(e)
+      // console.log(e)
       this.setData({
         currentIndex: e.currentTarget.dataset.index
       });
     },
     changeTabDatas: function (e) {
-      console.log(e)
-      console.log('changeTabDatas')
+      // console.log(e)
+      // console.log('changeTabDatas')
       // this.setData({
       //   swiperTabDatas: e.currentTarget.dataset.index
       // });
     },
     changecurrentIdx: function (e) {
-      console.log(e)
-      console.log('changecurrentIdx')
+      // console.log(e)
+      // console.log('changecurrentIdx')
       // this.setData({
       //   swiperTabDatas: e.currentTarget.dataset.index
       // });

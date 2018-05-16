@@ -1,20 +1,20 @@
 <!--components/tabCard/tabCard.wxml-->
 <view class="navbar segment">
-  <view wx:for="{{swiperTabDatas}}" data-index="{{index}}" class="item {{currentIndex==item.id?'active':''}}" bindtap="navbarTab" wx:key="unique">
+  <view wx:for="{{swiperTabDatas}}" data-index="{{index}}" class="item {{currentIndex==item.id?'active':''}}" bindtap="navbarTab" wx:key="this">
     <text class='margin1'>{{item.title}}</text>
   </view>
 </view>
-<view wx:for="{{swiperTabDatas}}" wx:for-item="item" wx:for-index="index">
+<view wx:for="{{swiperTabDatas}}" wx:key="this" wx:for-item="item" wx:for-index="index">
   <view class='waterfall segment' hidden="{{currentIndex!==item.id}}">
     <view class='title'>
       <text class='bold margin2p'>{{item.title}}</text>
     </view>
-    <view class='subs margin2p' wx:for="{{item.subs}}" wx:for-item="sub" wx:for-index="j">
+    <view class='subs margin2p' wx:for="{{item.subs}}" wx:key="this" wx:for-item="sub" wx:for-index="j">
       <view class='subtitle bold'>{{sub.subtitle}}</view>
-      <view class='margin2p' wx:for="{{sub.intro}}" wx:for-item="intro" wx:for-index="k">
+      <view class='margin2p' wx:for="{{sub.intro}}" wx:key="this"  wx:for-item="intro" wx:for-index="k">
         <view class='intro' hidden="{{item.display!=='w'}}">
           <view class='head bold'>{{intro.head}}</view>
-          <view wx:for="{{intro.content}}" wx:for-item="c" wx:for-index="s">
+          <view wx:for="{{intro.content}}" wx:key="this" wx:for-item="c" wx:for-index="s">
             <rich-text class='content' nodes="{{c}}"></rich-text>
           </view>
           <image class='img height100' mode='aspectFit' wx:if="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>

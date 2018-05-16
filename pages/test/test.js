@@ -8,19 +8,19 @@ Page({
   data: {
     swiperDatas: [
       {
-        url: '../../wistronits/1.jpg',
+        url: 'http://www.wistronits.com/cn/images/1.jpg',
         intro: '可信赖的战略合作伙伴'
       },
       {
-        url: '../../wistronits/2.jpg',
+        url: 'http://www.wistronits.com/cn/images/2.jpg',
         intro: 'IT服务 软件外包 面向全球26年'
       },
       {
-        url: '../../wistronits/3.jpg',
+        url: 'http://www.wistronits.com/cn/images/3.jpg',
         intro: '业务流程外包 高端技术 多样系统'
       },
       {
-        url: '../../wistronits/4.jpg',
+        url: 'http://www.wistronits.com/cn/images/4.jpg',
         intro: '产品全球化Mac & iOS经验 舍我其谁'
       }
     ],

@@ -1,6 +1,6 @@
 <!--index.wxml-->
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" class="swiper" interval="{{interval}}" bindchange="listenSwiper" duration="{{duration}}">
-  <block wx:for="{{swiperDatas}}">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" class="swiper" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{swiperDatas}}" wx:key="this">
     <swiper-item class="slide">
         <text class="slide-intro">{{item.intro}}</text>
         <image src="{{item.url}}" class="slide-image" width="100%" height="100%" />
