@@ -17,14 +17,14 @@
           <view wx:for="{{intro.content}}" wx:for-item="c" wx:for-index="s">
             <rich-text class='content' nodes="{{c}}"></rich-text>
           </view>
-          <image class='img height100' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
+          <image class='img height100' mode='aspectFit' wx:if="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>
         </view>
         <view class='time-line' hidden="{{item.display!=='t'}}">
           <view class="time-line-head fsize8p ">{{intro.head}}</view>
           <view class="time-line-content fsize8p ">{{intro.content}}</view>
         </view>
         <view class='personintro intro' hidden="{{item.display!=='p'}}">
-          <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
+          <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>
           <view class="head bold ">{{intro.head}}</view>
           <view class="head bold fsize9p ">{{intro.postion}}</view>
           <view class="content ">{{intro.content}}</view>
@@ -32,11 +32,11 @@
         <view class='image' hidden="{{item.display!=='i'}}">
           <view class="head bold">{{intro.head}}</view>
           <view class="content">{{intro.content}}</view>
-          <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="/wistronits/{{intro.img}}"></image>
+          <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>
         </view>
       </view>
-      <image class='img' mode='aspectFit' wx:if="{{sub.img}}" src="/wistronits/{{sub.img}}"></image>
+      <image class='img' mode='aspectFit' wx:if="{{sub.img}}" src="http://www.wistronits.com/cn/images/{{sub.img}}"></image>
     </view>
-    <image class='img' mode='aspectFit' wx:if="{{item.img}}" src="/wistronits/{{item.img}}"></image>
+    <image class='img' mode='aspectFit' wx:if="{{item.img}}" src="http://www.wistronits.com/cn/images/{{item.img}}"></image>
   </view>
 </view>

@@ -44,12 +44,6 @@
         "text": "应用",
         "iconPath": "./img/icon/default/applications.png",
         "selectedIconPath": "./img/icon/selected/applications.png"
-      },
-      {
-        "pagePath": "pages/industries/industries",
-        "text": "行业",
-        "iconPath": "./img/icon/default/industries.png",
-        "selectedIconPath": "./img/icon/selected/industries.png"
       }
     ],
     "position": "bottom"

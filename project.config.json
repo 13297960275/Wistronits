@@ -52,6 +52,18 @@
 					"name": "applications",
 					"pathName": "pages/applications/applications",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "services",
+					"pathName": "pages/services/services",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "solutions",
+					"pathName": "pages/solutions/solutions",
+					"query": ""
 				}
 			]
 		}
