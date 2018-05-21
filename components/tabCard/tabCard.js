@@ -48,6 +48,18 @@ Component({
       // this.setData({
       //   swiperTabDatas: e.currentTarget.dataset.index
       // });
+    },
+
+    //图片点击事件
+    previewImage: function (event) {
+      // console.log(event)
+      var src = "http://www.wistronits.com/cn/images/" + event.currentTarget.dataset.url;//获取data-src
+      var imgList = [src];//获取data-list
+      //图片预览
+      wx.previewImage({
+        current: src, // 当前显示图片的http链接
+        urls: imgList // 需要预览的图片http链接列表
+      })
     }
   }
 })

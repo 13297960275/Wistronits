@@ -4,39 +4,35 @@
     <text class='margin1'>{{item.title}}</text>
   </view>
 </view>
-<view wx:for="{{swiperTabDatas}}" wx:key="this" wx:for-item="item" wx:for-index="index">
+<view wx:for="{{swiperTabDatas}}" class='lineheight15' wx:key="this" wx:for-item="item" wx:for-index="index">
   <view class='waterfall segment' hidden="{{currentIndex!==item.id}}">
     <view class='title'>
       <text class='bold margin2p'>{{item.title}}</text>
     </view>
     <view class='subs margin2p' wx:for="{{item.subs}}" wx:key="this" wx:for-item="sub" wx:for-index="j">
-      <view class='subtitle bold'>{{sub.subtitle}}</view>
-      <view class='margin2p' wx:for="{{sub.intro}}" wx:key="this"  wx:for-item="intro" wx:for-index="k">
+      <view class='subtitle fsize9p bold'>{{sub.subtitle}}</view>
+      <view class='margin2p lineheight15' wx:for="{{sub.intro}}" wx:key="this" wx:for-item="intro" wx:for-index="k">
         <view class='intro' hidden="{{item.display!=='w'}}">
           <view class='head bold'>{{intro.head}}</view>
           <view wx:for="{{intro.content}}" wx:key="this" wx:for-item="c" wx:for-index="s">
             <rich-text class='content' nodes="{{c}}"></rich-text>
           </view>
-          <image class='img height100' mode='aspectFit' wx:if="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>
+          <image class='img height100' mode='aspectFit' bindtap="previewImage" wx:if="{{intro.img}}" data-url="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>
         </view>
         <view class='time-line' hidden="{{item.display!=='t'}}">
-          <view class="time-line-head fsize8p ">{{intro.head}}</view>
-          <view class="time-line-content fsize8p ">{{intro.content}}</view>
+          <view class="time-line-head">{{intro.head}}</view>
+          <view class="time-line-content">{{intro.content}}</view>
         </view>
         <view class='personintro intro' hidden="{{item.display!=='p'}}">
-          <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>
+          <image class='img' mode='aspectFit' bindtap="previewImage" wx:if="{{intro.img}}" data-url="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>
           <view class="head bold ">{{intro.head}}</view>
           <view class="head bold fsize9p ">{{intro.postion}}</view>
           <view class="content ">{{intro.content}}</view>
         </view>
         <view class='image' hidden="{{item.display!=='i'}}">
-          <view class="head bold">{{intro.head}}</view>
-          <view class="content">{{intro.content}}</view>
-          <image class='img' mode='aspectFit' wx:if="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>
+          <image class='img' mode='aspectFit' bindtap="previewImage" wx:if="{{intro.img}}" data-url="{{intro.img}}" src="http://www.wistronits.com/cn/images/{{intro.img}}"></image>
         </view>
       </view>
-      <image class='img' mode='aspectFit' wx:if="{{sub.img}}" src="http://www.wistronits.com/cn/images/{{sub.img}}"></image>
     </view>
-    <image class='img' mode='aspectFit' wx:if="{{item.img}}" src="http://www.wistronits.com/cn/images/{{item.img}}"></image>
   </view>
 </view>

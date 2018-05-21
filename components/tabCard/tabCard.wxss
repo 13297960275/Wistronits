@@ -42,6 +42,10 @@
   text-indent: 2rem;
 }
 
+.lineheight15 {
+  line-height: 1.5rem;
+}
+
 /* navbar style */
 
 .navbar {
@@ -122,16 +126,8 @@
   margin-bottom: 5px;
 }
 
-/*奇数行*/
-
-.intro .time-line:nth-of-type(odd) {
-  background-color: #d9e9ee;
-}
-
-/*偶数行 */
-
-.intro .time-line:nth-of-type(even) {
-  background-color: #e5f0f4;
+.subtitle {
+  color: blueviolet;
 }
 
 .time-line-head {
